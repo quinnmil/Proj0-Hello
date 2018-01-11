@@ -38,7 +38,7 @@ mechanisms.
    just like the auto-checker.
 
 # Docker Setup
-The following instructions are provided for Linux users. Make sure that you have a reasonably recent version.If you are  [Mac](https://docs.docker.com/docker-for-mac/install/) or a  [Windows](https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows) user, follow the instructions from the respective link provided. It should be straightforward.
+The following instructions are provided for Linux users. Make sure that you have a reasonably recent version. The snippets are to be pasted in your terminal( Without '$' sign). If you are  [Mac](https://docs.docker.com/docker-for-mac/install/) or a  [Windows](https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows) user, follow the instructions from the respective link provided. It should be straightforward.
 
 1. Update apt package:
     ```
@@ -46,14 +46,14 @@ The following instructions are provided for Linux users. Make sure that you have
     ```
 2. Install packages to allow apt to use a   repository over HTTPS:
 
-  ```
-  $ sudo apt-get install \
+   ```
+    $ sudo apt-get install \
      apt-transport-https \
      ca-certificates \
      curl \
      gnupg2 \
      software-properties-common
-     ```
+    ```
 3. Add Docker’s official GPG key:
 
   ```
@@ -67,8 +67,8 @@ The following instructions are provided for Linux users. Make sure that you have
   ```
 4. Setup stable repository:
 
-  ```
-  $ sudo add-apt-repository \
+    ```
+    $ sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/$(. /etc/os-release; echo "$ID") \
    $(lsb_release -cs) \
    stable"
@@ -79,9 +79,9 @@ The following instructions are provided for Linux users. Make sure that you have
   $ sudo apt-get install docker-ce
   ```
 6. Verify that Docker CE is installed correctly by running the hello-world image.
-```
-$ sudo docker run hello-world
-```
+  ```
+  $ sudo docker run hello-world
+  ```
 This command downloads a test image and runs it in a container. When the container runs, it prints an informational message and exits.
 
 For more information: (https://docs.docker.com/get-started/)
